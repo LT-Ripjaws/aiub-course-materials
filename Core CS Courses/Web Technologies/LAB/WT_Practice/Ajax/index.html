@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    button { margin: 5px; padding: 8px; }
+    #result { margin-top: 15px; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h2>AJAX Demo</h2>
+
+  <!-- Without AJAX (reloads the page) -->
+  <h3>Without AJAX</h3>
+  <form action="server.php" method="GET">
+    <input type="text" name="name" placeholder="Enter your name">
+    <button type="submit">Send (Page Reload)</button>
+  </form>
+
+  <hr>
+
+  <!-- With AJAX (no reload) -->
+  <h3>With AJAX</h3>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="sendRequest()">Send (AJAX)</button>
+
+  <div id="result">Response will appear here...</div>
+
+  <script>
+    function sendRequest() {
+      let name = document.getElementById("nameInput").value;
+
+      // 1. Create request object
+      var xhr = new XMLHttpRequest();
+
+      // 2. Setup callback when response is ready
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          document.getElementById("result").innerHTML = xhr.responseText;
+        }
+      };
+
+      // 3. Open request (async = true)
+      xhr.open("GET", "server.php?name=" + name, true);
+
+      // 4. Send request
+      xhr.send();
+    }
+  </script>
+
+  
+</body>
+</html>

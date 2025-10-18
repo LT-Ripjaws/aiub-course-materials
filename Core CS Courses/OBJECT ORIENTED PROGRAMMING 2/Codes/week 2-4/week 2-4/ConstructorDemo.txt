@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConstructorDemo
+{
+    class Person
+    {
+        string name;
+        int id;
+        string loc;
+        public Person()
+        {
+            Console.WriteLine("User Defined Constructor");
+        }
+        public Person(string n, int i)
+        {
+            name = n;
+            id = i;
+            Console.WriteLine("Parameterized Constructor calling");
+
+        }
+        public Person(string n, int i, string l):this()
+        {
+            name = n;
+            id = i;
+            loc = l;
+            Console.WriteLine("Constructor overloading");
+        }
+
+        public void info()
+        {
+            Console.WriteLine("Name: "+ name +"\n"+"ID: "+ id +"\n"+"Location: "+ loc);
+        }
+        static void Main(string[] args)
+        {
+            Person obj = new Person("JOY", 45, "Uttara");
+            obj.info();
+            Console.ReadKey();
+        }
+    }
+}

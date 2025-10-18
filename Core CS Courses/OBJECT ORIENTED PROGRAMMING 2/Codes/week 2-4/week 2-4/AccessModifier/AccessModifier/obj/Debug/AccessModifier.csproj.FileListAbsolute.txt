@@ -1,0 +1,11 @@
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\obj\Debug\AccessModifier.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\obj\Debug\AccessModifier.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\AccessModifier.exe.config
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\AccessModifier.exe
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\AccessModifier.pdb
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\internalAccess.exe
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\internalAccess.pdb
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\bin\Debug\internalAccess.exe.config
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\obj\Debug\AccessModifier.csproj.CopyComplete
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\obj\Debug\AccessModifier.exe
+C:\Users\HP\source\repos\AccessModifier\AccessModifier\obj\Debug\AccessModifier.pdb

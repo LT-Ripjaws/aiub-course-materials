@@ -1,0 +1,7 @@
+C:\Users\MSI\source\repos\lab task 3\lab task 3\bin\Debug\lab task 3.exe.config
+C:\Users\MSI\source\repos\lab task 3\lab task 3\bin\Debug\lab task 3.exe
+C:\Users\MSI\source\repos\lab task 3\lab task 3\bin\Debug\lab task 3.pdb
+C:\Users\MSI\source\repos\lab task 3\lab task 3\obj\Debug\lab task 3.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\lab task 3\lab task 3\obj\Debug\lab task 3.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\lab task 3\lab task 3\obj\Debug\lab task 3.exe
+C:\Users\MSI\source\repos\lab task 3\lab task 3\obj\Debug\lab task 3.pdb

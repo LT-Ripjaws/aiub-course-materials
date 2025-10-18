@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace polymorphism
+{
+    class Person
+    {
+        public void show()
+        {
+            Console.WriteLine("Parent show method calling");
+        }
+        public virtual void test()
+        {
+            Console.WriteLine("Person test method");
+        }
+    }
+    class A: Person
+    {
+        public void show(int a)
+        {
+            Console.WriteLine("A show method calling");
+        }
+        public override void test()
+        {
+            Console.WriteLine("A Test is calling");
+        }
+    }
+    class Progra
+    {
+        static void Main(string[] args)
+        {
+            A obj = new A();
+            obj.test();
+            obj.show();
+            obj.show(2);
+            Console.ReadKey();
+        }
+    }
+}
