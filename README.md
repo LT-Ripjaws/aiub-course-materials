@@ -28,7 +28,7 @@ This repository contains organized course materials from my undergraduate studie
 ## 📖 Featured Projects
 
 - **[Computer Graphics](Core%20CS%20Courses/Computer%20Graphics/project.md)** - Chronoscape: Day-Night cycle simulation in OpenGL
-- **[C++](Core%20CS%20Courses/Introduction%20to%20Programming/project.md)** - Chronoscape: Day-Night cycle simulation in OpenGL
+- **[C++](Core%20CS%20Courses/Introduction%20to%20Programming/project.md)** - Swift MedAccess - a C++ console project
 - **[Database Project](Core%20CS%20Courses/Introduction%20to%20Database/Project%20Report/)** - Complete database design and implementation
 - **[Data Science](Core%20CS%20Courses/Introduction%20to%20Data-Science/project.md)** - R programming and statistical analysis
 - **[OOP2 Project](Core%20CS%20Courses/OBJECT%20ORIENTED%20PROGRAMMING%202/project.md)** - C# Windows Forms application
