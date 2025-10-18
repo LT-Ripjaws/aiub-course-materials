@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace demoform
+{
+    public partial class Form1 : Form
+    {
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive - American International University-Bangladesh\Documents\demoDB.mdf;Integrated Security=True;Connect Timeout=30";
+
+           // string Connection2 = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive - American International University-Bangladesh\Documents\demoDB.mdf;Integrated Security=True;Connect Timeout=30"; 
+
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+
+            SqlCommand sq2 = new SqlCommand("INSERT into usser(ID,NAME,AGE,ADDRESS) values(@Id,@NAME,@AGE,@ADD)", con);
+            sq2.Parameters.AddWithValue("@Id", int.Parse(textBox1.Text));
+            sq2.Parameters.AddWithValue("@NAME", textBox2.Text);
+            sq2.Parameters.AddWithValue("@AGE", int.Parse(textBox3.Text));
+            sq2.Parameters.AddWithValue("@ADD", textBox4.Text);
+            sq2.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("User Added");
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive - American International University-Bangladesh\Documents\demoDB.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+
+            //SqlCommand sq1 = new SqlCommand("select * from USSER", con);
+            //DataTable dt = new DataTable();
+
+            //SqlDataReader sdr = sq1.ExecuteReader();
+            //dt.Load(sdr);
+
+            //dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}

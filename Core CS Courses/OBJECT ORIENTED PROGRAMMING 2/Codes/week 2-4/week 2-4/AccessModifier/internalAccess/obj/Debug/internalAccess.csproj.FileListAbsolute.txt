@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\AccessModifier\internalAccess\obj\Debug\internalAccess.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AccessModifier\internalAccess\obj\Debug\internalAccess.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AccessModifier\internalAccess\bin\Debug\internalAccess.exe.config
+C:\Users\HP\source\repos\AccessModifier\internalAccess\bin\Debug\internalAccess.exe
+C:\Users\HP\source\repos\AccessModifier\internalAccess\bin\Debug\internalAccess.pdb
+C:\Users\HP\source\repos\AccessModifier\internalAccess\obj\Debug\internalAccess.exe
+C:\Users\HP\source\repos\AccessModifier\internalAccess\obj\Debug\internalAccess.pdb

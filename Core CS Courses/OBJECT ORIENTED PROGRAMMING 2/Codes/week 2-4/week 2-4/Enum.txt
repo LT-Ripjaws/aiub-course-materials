@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Enum
+{
+    public enum season
+    {
+        summer,
+        spring = 5,
+        winter,
+        Autumn
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            season a = season.winter;
+            Console.WriteLine(a);          
+
+            int c = (int)season.winter;
+            Console.WriteLine(c);
+
+            //season b = season.Autumn;
+            ////Console.WriteLine(b);
+
+            //switch (b)
+            //{
+            //    case season.Autumn:
+            //        Console.WriteLine("Autumn");
+            //        break;
+            //    case season.spring:
+            //        Console.WriteLine("Autumn");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Take a valid input");
+            //        break;
+            //}
+
+            Console.ReadKey();
+        }
+    }
+}

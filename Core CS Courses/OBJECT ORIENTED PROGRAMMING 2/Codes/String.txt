@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stringMan
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "This is a string";
+
+            int a = str.Length;
+            string ss = str.ToUpper();
+            string sl = str.ToLower();
+            string se = str.Substring(0, 6);
+            string sg = str.Replace('s','5');
+            string sin = str.Insert(0, "New");
+
+            string st = str.Trim();
+
+            string str2 = "this-is-a-string";
+
+            string[] s = str2.Split('-');
+            
+            foreach(string sss in s)
+            {
+                Console.WriteLine(sss);
+            }
+
+            bool scon = str.Contains("string");
+
+            Console.WriteLine(str.Equals(str2));
+
+            Console.WriteLine(scon);
+            Console.ReadKey();
+        }
+    }
+}
