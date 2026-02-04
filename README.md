@@ -34,6 +34,7 @@ This repository contains organized course materials from my undergraduate studie
 - **[OOP2 Project](Core%20CS%20Courses/OBJECT%20ORIENTED%20PROGRAMMING%202/project.md)** - C# Windows Forms application
 - **[Software Engineering](Core%20CS%20Courses/Software%20Engineering/Project.md)** - Full SDLC documentation
 - **[Web Technologies](Core%20CS%20Courses/Web%20Technologies/project.md)** - PHP-based web application
+- **[Data-Mining](Core%20CS%20Courses/Data-Mining/)** - Data Mining project
 
 ## 🎓 About
 
