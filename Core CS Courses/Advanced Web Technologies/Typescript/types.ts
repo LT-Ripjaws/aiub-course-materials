@@ -69,5 +69,91 @@ let scores = ['Programming', 5, 'Software Design', 4];
 console.log(typeof(scores))
 
 // same as:
-let scores2: (string | number)[] = ['Programming', 5, 'Software Design', 4]; 
+let scores2: (string | number)[] = ['Programming', 5, 'Software Design', 4]; // this is a union type
 console.log(scores2)
+
+// TUPLES work like an array with some additional considerations: the number of elements and their types must be known at compile time.
+// plus the order must be same
+let user: [number, string, boolean] = [1, 'Chinmoy', true]
+console.log(user[0]); // 1
+console.log(user[1]); // Chinmoy
+console.log(user[2]); // true
+
+type TUser = [number, string]
+
+const newUser1: TUser = [1, 'Chinmoy']
+
+
+
+
+
+// Enums: An enum is a group of named constant values. Each value has a name and a value.
+enum Color {
+    Red = 1,
+    Green = 2,
+    Blue = 3
+}
+let color = Color.Red
+console.log(color)
+
+enum Month {
+    Jan,
+    Feb,
+    Mar,
+    Apr,
+    May,
+    Jun,
+    Jul,
+    Aug,
+    Sep,
+    Oct,
+    Nov,
+    Dec
+};
+
+function isItSummer(month: Month) {
+  let isSummer: boolean;
+  switch (month) {
+    case Month.Jun:
+    case Month.Jul:
+    case Month.Aug:
+      isSummer = true;
+      break;
+    default:
+      isSummer = false;
+      break;
+  }
+  return isSummer;
+}
+
+console.log(isItSummer(Month.Jun)); // true
+
+/*
+You should use an enum when you:
+
+Have a small set of closely related fixed values.
+And these values are known at compile time.
+For example, you can use an enum for the approval status:
+
+enum ApprovalStatus {
+    draft,
+    submitted,
+    approved,
+    rejected
+};
+Code language: TypeScript (typescript)
+Then, you can use the ApprovalStatus enum like this:
+
+const request =  {
+    id: 1,
+    status: ApprovalStatus.approved,
+    description: 'Please approve this request'
+};
+
+if(request.status === ApprovalStatus.approved) {
+    // send an email
+    console.log('Send email to the Applicant...');
+}
+*/
+
+
