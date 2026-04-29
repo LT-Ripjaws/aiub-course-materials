@@ -1,0 +1,86 @@
+     1|/* Design Tokens — CSS Custom Properties */
+     2|:root {
+     3|  --color-primary: #3b82f6;
+     4|  --color-primary-dark: #1d4ed8;
+     5|  --color-bg: #f8fafc;
+     6|  --color-surface: #ffffff;
+     7|  --color-text: #0f172a;
+     8|  --color-text-muted: #64748b;
+     9|  --color-border: #e2e8f0;
+    10|  --color-accent: #10b981;
+    11|  --radius-sm: 6px;
+    12|  --radius-md: 12px;
+    13|  --radius-lg: 16px;
+    14|  --spacing-xs: 4px;
+    15|  --spacing-sm: 8px;
+    16|  --spacing-md: 16px;
+    17|  --spacing-lg: 24px;
+    18|  --spacing-xl: 32px;
+    19|  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    20|}
+    21|
+    22|* { box-sizing: border-box; margin: 0; padding: 0; }
+    23|body { font-family: var(--font-sans); background-color: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+    24|
+    25|.dashboard-header {
+    26|  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    27|  color: white; padding: var(--spacing-xl) var(--spacing-lg); text-align: center;
+    28|  border-radius: 0 0 var(--radius-lg) var(--radius-lg); box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    29|}
+    30|.dashboard-header__title { font-size: 2rem; font-weight: 700; margin-bottom: var(--spacing-xs); }
+    31|.dashboard-header__tagline { font-size: 0.95rem; opacity: 0.9; font-weight: 400; }
+    32|.dashboard-header__nav { margin-top: var(--spacing-lg); display: flex; justify-content: center; gap: var(--spacing-md); }
+    33|.dashboard-header__nav-item { color: rgba(255,255,255,0.85); text-decoration: none; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-sm); transition: background-color 0.2s ease; }
+    34|.dashboard-header__nav-item:hover { background-color: rgba(255,255,255,0.15); }
+    35|
+    36|.student-card {
+    37|  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md);
+    38|  padding: var(--spacing-lg); display: flex; gap: var(--spacing-md); align-items: flex-start;
+    39|  box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease;
+    40|}
+    41|.student-card:hover { transform: translateY(-2px); box-shadow: 0 8px 12px rgba(0,0,0,0.08); }
+    42|.student-card__avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-primary); }
+    43|.student-card__info { flex: 1; }
+    44|.student-card__name { font-size: 1.1rem; font-weight: 600; margin-bottom: var(--spacing-xs); }
+    45|.student-card__id { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: var(--spacing-sm); }
+    46|.student-card__courses { display: flex; flex-wrap: wrap; gap: var(--spacing-xs); margin-top: var(--spacing-sm); }
+    47|.student-card__stats { display: flex; gap: var(--spacing-md); margin-top: var(--spacing-sm); }
+    48|
+    49|.course-tag {
+    50|  display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 0.75rem;
+    51|  font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; background-color: var(--color-accent); color: white;
+    52|}
+    53|.course-tag--blue { background-color: var(--color-primary); }
+    54|.course-tag--purple { background-color: #a855f7; }
+    55|.course-tag--orange { background-color: #f97316; }
+    56|
+    57|.stat-badge {
+    58|  display: inline-flex; align-items: center; gap: var(--spacing-xs);
+    59|  padding: var(--spacing-xs) var(--spacing-sm); background-color: var(--color-bg);
+    60|  border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: 0.85rem;
+    61|}
+    62|.stat-badge__label { color: var(--color-text-muted); font-weight: 500; }
+    63|.stat-badge__value { font-weight: 700; color: var(--color-text); }
+    64|
+    65|.dashboard-grid {
+    66|  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    67|  gap: var(--spacing-lg); padding: var(--spacing-xl); max-width: 1200px; margin: 0 auto;
+    68|}
+    69|.no-data { text-align: center; padding: var(--spacing-xl); color: var(--color-text-muted); }
+    70|
+    71|@media (max-width: 640px) {
+    72|  .dashboard-header__title { font-size: 1.5rem; }
+    73|  .dashboard-grid { padding: var(--spacing-md); grid-template-columns: 1fr; }
+    74|}
+
+/* Dark Mode — data-theme="dark" */
+[data-theme="dark"] {
+  --color-primary: #60a5fa;
+  --color-primary-dark: #3b82f6;
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+  --color-accent: #34d399;
+}
