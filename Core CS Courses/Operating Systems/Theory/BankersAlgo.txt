@@ -1,0 +1,44 @@
+    
+
+A= Available or Work
+AL= Allocation
+
+A=3 3 2
+
+P1=1 2 2
+A= 2 1 0
+
+No need can be satisfied return all resources consumed by P1.
+
+A= 3 3 2
+A=A+AL = 3 3 2 + 2 0 0= 5 3 2
+
+p3=0 1 1
+A= 5 2 1
+
+No need can be satisfied return all resources consumed by P3.
+
+A=A+AL = 5 3 2 + 2 1 1= 7 4 3
+
+P4=4 3 1
+A= 3 1 2
+
+No need can be satisfied return all resources consumed by P4.
+
+A=7 4 3 + 0 0 2= 7 4 5
+
+P0=7 4 3
+A= 0 0 2
+
+No need can be satisfied return all resources consumed by P0.
+
+A= 7 4 5 + 0 1 0= 7 5 5
+
+P2=6 0 0
+A= 1 5 5
+
+Return all resources consumed by P2.
+
+A= 7 5 5 + 3 0 2= 10 5 7
+
+Now total available resource is 10 5 7.
