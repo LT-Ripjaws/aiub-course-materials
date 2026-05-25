@@ -12,6 +12,7 @@ This repository contains organized course materials from my undergraduate studie
 📦 AIUB Course Materials
 ├── 📁 Core CS Courses          # Programming, Algorithms, Database, AI, etc.
 ├── 📁 EEE Courses              # Electronics, Circuits, Digital Logic
+├── 📁 Electives                # Elective courses
 ├── 📁 Math Courses             # Calculus, Linear Algebra, Statistics
 ├── 📁 Science Courses          # Physics, Chemistry
 ├── 📁 General Courses          # Economics, Accounting, Bangladesh Studies
@@ -30,11 +31,11 @@ This repository contains organized course materials from my undergraduate studie
 - **[Computer Graphics](Core%20CS%20Courses/Computer%20Graphics/project.md)** - Chronoscape: Day-Night cycle simulation in OpenGL
 - **[C++](Core%20CS%20Courses/Introduction%20to%20Programming/project.md)** - Swift MedAccess - a C++ console project
 - **[Database Project](Core%20CS%20Courses/Introduction%20to%20Database/Project%20Report/)** - Complete database design and implementation
-- **[Data Science](Core%20CS%20Courses/Introduction%20to%20Data-Science/project.md)** - R programming and statistical analysis
+- **[Data Science](Electives/Introduction%20to%20Data-Science/project.md)** - R programming and statistical analysis
 - **[OOP2 Project](Core%20CS%20Courses/OBJECT%20ORIENTED%20PROGRAMMING%202/project.md)** - C# Windows Forms application
 - **[Software Engineering](Core%20CS%20Courses/Software%20Engineering/Project.md)** - Full SDLC documentation
 - **[Web Technologies](Core%20CS%20Courses/Web%20Technologies/project.md)** - PHP-based web application
-- **[Data-Mining](Core%20CS%20Courses/Data-Mining/)** - Data Mining project
+- **[Data-Mining](Electives/Data-Mining/)** - Data Mining project
 
 ## 🎓 About
 
