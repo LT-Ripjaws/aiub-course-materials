@@ -2,31 +2,32 @@
 
 A comprehensive collection of lecture slides, lab codes, assignments, and study materials from my Computer Science & Engineering journey at American International University-Bangladesh (AIUB).
 
-## 📚 Repository Overview
+## Repository Overview
 
 This repository contains organized course materials from my undergraduate studies, covering core CS subjects, mathematics, science, and general education courses.
 
-## 🗂️ Structure
+## Structure
 
 ```
 📦 AIUB Course Materials
 ├── 📁 Core CS Courses          # Programming, Algorithms, Database, AI, etc.
 ├── 📁 EEE Courses              # Electronics, Circuits, Digital Logic
-├── 📁 Electives                # Elective courses
+├── 📁 Electives                # Web Tech, Computer Vision, Data Mining, HCI, Data Science
 ├── 📁 Math Courses             # Calculus, Linear Algebra, Statistics
 ├── 📁 Science Courses          # Physics, Chemistry
-├── 📁 General Courses          # Economics, Accounting, Bangladesh Studies
+├── 📁 General Courses          # Economics, Accounting, Bangladesh Studies, Business Communication, Engineering Management
 └── 📄 Semester Wise Course Plan
 ```
-## 🎯 What's Included
+## What's Included
 
 - **Lecture Slides** (.pptx, .pdf) - Professor's presentations
-- **Lab Codes** (.cpp, .java, .cs, .py, .php) - Practical implementations
+- **Lab Codes** (.cpp, .java, .cs, .py, .php, .ts, .jsx, .asm) - Practical implementations
+- **Notebooks** (.ipynb) - Machine learning assignments
 - **Assignments & Reports** - Lab reports, project documentation
 - **Practice Problems** - Additional exercises and solutions
 - **Books & References** - Recommended textbooks and study materials
 
-## 📖 Featured Projects
+## Featured Projects
 
 - **[Computer Graphics](Core%20CS%20Courses/Computer%20Graphics/project.md)** - Chronoscape: Day-Night cycle simulation in OpenGL
 - **[C++](Core%20CS%20Courses/Introduction%20to%20Programming/project.md)** - Swift MedAccess - a C++ console project
@@ -36,8 +37,11 @@ This repository contains organized course materials from my undergraduate studie
 - **[Software Engineering](Core%20CS%20Courses/Software%20Engineering/Project.md)** - Full SDLC documentation
 - **[Web Technologies](Core%20CS%20Courses/Web%20Technologies/project.md)** - PHP-based web application
 - **[Data-Mining](Electives/Data-Mining/)** - Data Mining project
+- **[Computer Vision](Electives/Computer%20Vision%20And%20Pattern%20Recognition/CNN_22-48056-2.ipynb)** - Custom CNN for CIFAR-10 image classification in PyTorch, with an ablation study
+- **[Advanced Web Technologies](Electives/Advanced%20Web%20Technologies/Lab/)** - NestJS lab tasks (REST APIs, TypeORM with PostgreSQL) and React labs. Final project: [GitHub AI Changelog](https://github.com/LT-Ripjaws/github-ai-changelog)
+- **[Human Computer Interaction](https://github.com/LT-Ripjaws/hci-project)** - Twinflare: a two-player browser game controlled by handheld tilt-sensor rockets built on an Arduino
 
-## 🎓 About
+## About
 
 **Institution**: American International University-Bangladesh (AIUB)  
 **Program**: B.Sc. in Computer Science & Engineering  
